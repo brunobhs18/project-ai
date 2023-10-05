@@ -24,7 +24,7 @@ export function App() {
     completion,
     isLoading,
   } = useCompletion({
-    api: 'http://localhost:3333/ai/complete',
+    api: 'https://api-ai-nlw.vercel.app/ai/complete',
     body: {
       videoId,
       temperature,      
@@ -42,7 +42,7 @@ export function App() {
         <div className="flex items-center gap-3">
           <span 
             className="text-sm text-muted-foreground">
-              Desenvolvido no NLW 
+              Desenvolvido em participação do evento NLW-IA
           </span>
 
           <Separator orientation='vertical' className='h-6'/>
