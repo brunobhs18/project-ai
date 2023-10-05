@@ -100,8 +100,6 @@ export function VideoInputForm(props: VideoInputFormProps){
 
     await api.post(`/videos/${videoId}/transcription`, {
       prompt,
-    }, {
-      timeout: 30000,
     })
 
     setStatus('success')
